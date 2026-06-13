@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: agenova-api
+    runtime: docker
+    rootDir: backend
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: AGENOVA_ENV
+        value: production
+      - key: AGENOVA_LLM_PROVIDER
+        value: mock
+      - key: AGENOVA_USE_SENTENCE_TRANSFORMERS
+        value: "false"
+
+  - type: web
+    name: agenova-dashboard
+    runtime: docker
+    rootDir: frontend
+    dockerfilePath: ./Dockerfile
+    plan: free
+    envVars:
+      - key: NEXT_PUBLIC_API_URL
+        value: https://agenova-api.onrender.com
