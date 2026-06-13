@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: agenova-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: agenova-api
+  template:
+    metadata:
+      labels:
+        app: agenova-api
+    spec:
+      containers:
+        - name: api
+          image: ghcr.io/ani-sha23/agenova-api:latest
+          ports:
+            - containerPort: 8000
+          env:
+            - name: AGENOVA_ENV
+              value: production
+            - name: AGENOVA_LLM_PROVIDER
+              value: mock
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: agenova-api
+spec:
+  selector:
+    app: agenova-api
+  ports:
+    - port: 80
+      targetPort: 8000

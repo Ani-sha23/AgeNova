@@ -1,0 +1,3 @@
+{"id":"task-1","task":"Explain why hybrid memory is useful for multi-hop reasoning.","expected_keywords":["vector","graph","retrieval"]}
+{"id":"task-2","task":"Describe how a planner and critic improve agent consensus.","expected_keywords":["planner","critic","consensus"]}
+{"id":"task-3","task":"Summarize how AgeNova can be deployed locally.","expected_keywords":["Docker","FastAPI","dashboard"]}
