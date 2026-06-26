@@ -1,6 +1,6 @@
 # AgeNova
 
-AutonomouS multi-agent intelligence ecosystem with dynamic agent generation, hybrid retrieval memory, and a deployable FastAPI inference service.
+Autonomous multi-agent intelligence ecosystem with dynamic agent generation, hybrid retrieval memory, and a deployable FastAPI inference service.
 
 AgeNova is an original GenAI project that demonstrates how multiple specialized agents can plan, debate, retrieve evidence, write to long-term memory, and return a traceable final answer. The repository is intentionally self-contained: the default setup runs locally with lightweight components, while optional Qdrant, Neo4j, Prometheus, Grafana, and Docker Compose profiles are included for a production-style deployment.
 
