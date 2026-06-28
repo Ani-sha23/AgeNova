@@ -33,7 +33,7 @@ flowchart LR
 
 ## Quick Start
 
-### Backend
+### Backend commands
 
 ```bash
 cd backend
