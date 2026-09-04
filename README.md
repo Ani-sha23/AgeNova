@@ -1,5 +1,4 @@
 # AgeNova
-(AgeNova=Agentic+Nova)
 
 Autonomous multi-agent intelligence ecosystem with dynamic agent generation, hybrid retrieval memory, and a deployable FastAPI inference service.
 
