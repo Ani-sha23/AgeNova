@@ -127,7 +127,6 @@ AgeNova does not train a large model from scratch. It deploys an inference-time 
 - Runtime memory: in-process vector store by default, optional Qdrant
 - Runtime graph memory: in-process graph by default, optional Neo4j
 
-See [deployment/DEPLOYMENT.md](deployment/DEPLOYMENT.md).
 
 ## Environment Variables
 
